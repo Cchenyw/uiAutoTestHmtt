@@ -1,0 +1,26 @@
+{
+  "uid" : "4b4757e66a1912dae1a509f688f20b0f",
+  "name" : "categories",
+  "children" : [ {
+    "name" : "Product defects",
+    "children" : [ {
+      "name" : "AssertionError: assert '138123456789' == '像花儿一样'",
+      "children" : [ {
+        "name" : "test_mp_login[13812345678-246811-138123456789]",
+        "uid" : "a7200b8ccc9db0a1",
+        "parentUid" : "fde9603843ecf14d4a48e3a8b45f29d8",
+        "status" : "failed",
+        "time" : {
+          "start" : 1621263730209,
+          "stop" : 1621263734203,
+          "duration" : 3994
+        },
+        "flaky" : false,
+        "newFailed" : false,
+        "parameters" : [ "'246811'", "'138123456789'", "'13812345678'" ]
+      } ],
+      "uid" : "fde9603843ecf14d4a48e3a8b45f29d8"
+    } ],
+    "uid" : "8fb3a91ba5aaf9de24cc8a92edc82b5d"
+  } ]
+}

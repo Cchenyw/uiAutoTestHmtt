@@ -1,0 +1,22 @@
+{
+  "uid" : "83edc06c07f9ae9e47eb6dd1b683e4e2",
+  "name" : "packages",
+  "children" : [ {
+    "name" : "scripts.test01_mp_login",
+    "children" : [ {
+      "name" : "test_mp_login[13812345678-246811-138123456789]",
+      "uid" : "a7200b8ccc9db0a1",
+      "parentUid" : "3e2e624d65d218f3f22771c18a4a78a8",
+      "status" : "failed",
+      "time" : {
+        "start" : 1621263730209,
+        "stop" : 1621263734203,
+        "duration" : 3994
+      },
+      "flaky" : false,
+      "newFailed" : false,
+      "parameters" : [ "'246811'", "'138123456789'", "'13812345678'" ]
+    } ],
+    "uid" : "scripts.test01_mp_login"
+  } ]
+}

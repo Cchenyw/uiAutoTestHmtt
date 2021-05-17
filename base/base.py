@@ -63,13 +63,13 @@ class Base:
     # 截图
     def base_get_img(self):
         # 1. 调用截图方法
-        self.driver.get_screenshot_as_file("./image/err.png")
+        self.driver.get_screenshot_as_file("../image/err.png")
         # 2. 调用截图写入报告方法
         self.__base_write_img()
 
     # 将图片写入报告方法（私有）
     def __base_write_img(self):
         # 1.获取图片文件流
-        with open("./image/err.png", "rb") as f:
+        with open("../image/err.png", "rb") as f:
             # 2.调用allure.attach附加方法("附件主体","备注","附件类型")
             allure.attach(f.read(), "错误原因:", allure.attachment_type.PNG)

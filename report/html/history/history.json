@@ -1,0 +1,22 @@
+{
+  "0684d7ea74a8d3e5a565a2d9d5e8d47b" : {
+    "statistic" : {
+      "failed" : 1,
+      "broken" : 0,
+      "skipped" : 0,
+      "passed" : 0,
+      "unknown" : 0,
+      "total" : 1
+    },
+    "items" : [ {
+      "uid" : "a7200b8ccc9db0a1",
+      "status" : "failed",
+      "statusDetails" : "AssertionError: assert '138123456789' == '像花儿一样'",
+      "time" : {
+        "start" : 1621263730209,
+        "stop" : 1621263734203,
+        "duration" : 3994
+      }
+    } ]
+  }
+}

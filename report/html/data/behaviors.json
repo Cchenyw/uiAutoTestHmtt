@@ -1,0 +1,18 @@
+{
+  "uid" : "b1a8273437954620fa374b796ffaacdd",
+  "name" : "behaviors",
+  "children" : [ {
+    "name" : "test_mp_login[13812345678-246811-138123456789]",
+    "uid" : "a7200b8ccc9db0a1",
+    "parentUid" : "b1a8273437954620fa374b796ffaacdd",
+    "status" : "failed",
+    "time" : {
+      "start" : 1621263730209,
+      "stop" : 1621263734203,
+      "duration" : 3994
+    },
+    "flaky" : false,
+    "newFailed" : false,
+    "parameters" : [ "'246811'", "'138123456789'", "'13812345678'" ]
+  } ]
+}

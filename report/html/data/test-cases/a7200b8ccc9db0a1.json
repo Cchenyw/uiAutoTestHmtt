@@ -1,0 +1,145 @@
+{
+  "uid" : "a7200b8ccc9db0a1",
+  "name" : "test_mp_login[13812345678-246811-138123456789]",
+  "fullName" : "scripts.test01_mp_login.TestMpLogin#test_mp_login",
+  "historyId" : "0684d7ea74a8d3e5a565a2d9d5e8d47b",
+  "time" : {
+    "start" : 1621263730209,
+    "stop" : 1621263734203,
+    "duration" : 3994
+  },
+  "status" : "failed",
+  "statusMessage" : "AssertionError: assert '138123456789' == '像花儿一样'",
+  "statusTrace" : "self = <scripts.test01_mp_login.TestMpLogin object at 0x0000026B13AE28E0>\nusername = '13812345678', code = '246811', expect = '138123456789'\n\n    @pytest.mark.parametrize(\"username,code,expect\", read_yaml(\"mp_login.yaml\"))\n    @allure.step(\"第一步:登录测试\")\n    def test_mp_login(self, username, code, expect):\n        # 1.调用登录业务方法\n        self.mp.page_mp_login(username, code)\n        # 2.断言(assert就是普通声明)\n        try:\n>           assert expect == self.mp.page_get_nickname()\nE           AssertionError: assert '138123456789' == '像花儿一样'\n\ntest01_mp_login.py:40: AssertionError",
+  "flaky" : false,
+  "newFailed" : false,
+  "beforeStages" : [ {
+    "name" : "xunit_setup_class_fixture_TestMpLogin",
+    "time" : {
+      "start" : 1621263727885,
+      "stop" : 1621263730208,
+      "duration" : 2323
+    },
+    "status" : "passed",
+    "steps" : [ ],
+    "attachments" : [ ],
+    "parameters" : [ ],
+    "attachmentsCount" : 0,
+    "shouldDisplayMessage" : false,
+    "hasContent" : false,
+    "stepsCount" : 0
+  } ],
+  "testStage" : {
+    "status" : "failed",
+    "statusMessage" : "AssertionError: assert '138123456789' == '像花儿一样'",
+    "statusTrace" : "self = <scripts.test01_mp_login.TestMpLogin object at 0x0000026B13AE28E0>\nusername = '13812345678', code = '246811', expect = '138123456789'\n\n    @pytest.mark.parametrize(\"username,code,expect\", read_yaml(\"mp_login.yaml\"))\n    @allure.step(\"第一步:登录测试\")\n    def test_mp_login(self, username, code, expect):\n        # 1.调用登录业务方法\n        self.mp.page_mp_login(username, code)\n        # 2.断言(assert就是普通声明)\n        try:\n>           assert expect == self.mp.page_get_nickname()\nE           AssertionError: assert '138123456789' == '像花儿一样'\n\ntest01_mp_login.py:40: AssertionError",
+    "steps" : [ {
+      "name" : "第一步:登录测试",
+      "time" : {
+        "start" : 1621263730209,
+        "stop" : 1621263734202,
+        "duration" : 3993
+      },
+      "status" : "failed",
+      "statusMessage" : "AssertionError: assert '138123456789' == '像花儿一样'\n",
+      "statusTrace" : "  File \"E:\\PycharmProjects\\uiAutoTestHmtt\\venv\\lib\\site-packages\\allure_commons\\_allure.py\", line 157, in impl\n    return func(*a, **kw)\n  File \"E:\\PycharmProjects\\uiAutoTestHmtt\\scripts\\test01_mp_login.py\", line 40, in test_mp_login\n    assert expect == self.mp.page_get_nickname()\n",
+      "steps" : [ ],
+      "attachments" : [ {
+        "uid" : "d054e5572a741822",
+        "name" : "错误原因:",
+        "source" : "d054e5572a741822.png",
+        "type" : "image/png",
+        "size" : 136370
+      } ],
+      "parameters" : [ {
+        "name" : "username",
+        "value" : "'13812345678'"
+      }, {
+        "name" : "code",
+        "value" : "'246811'"
+      }, {
+        "name" : "expect",
+        "value" : "'138123456789'"
+      } ],
+      "attachmentsCount" : 1,
+      "shouldDisplayMessage" : true,
+      "hasContent" : true,
+      "stepsCount" : 0
+    } ],
+    "attachments" : [ ],
+    "parameters" : [ ],
+    "attachmentsCount" : 1,
+    "shouldDisplayMessage" : true,
+    "hasContent" : true,
+    "stepsCount" : 1
+  },
+  "afterStages" : [ {
+    "name" : "xunit_setup_class_fixture_TestMpLogin::0",
+    "time" : {
+      "start" : 1621263734315,
+      "stop" : 1621263736450,
+      "duration" : 2135
+    },
+    "status" : "passed",
+    "steps" : [ ],
+    "attachments" : [ ],
+    "parameters" : [ ],
+    "attachmentsCount" : 0,
+    "shouldDisplayMessage" : false,
+    "hasContent" : false,
+    "stepsCount" : 0
+  } ],
+  "labels" : [ {
+    "name" : "parentSuite",
+    "value" : "scripts"
+  }, {
+    "name" : "suite",
+    "value" : "test01_mp_login"
+  }, {
+    "name" : "subSuite",
+    "value" : "TestMpLogin"
+  }, {
+    "name" : "host",
+    "value" : "DESKTOP-PKS12GK"
+  }, {
+    "name" : "thread",
+    "value" : "18076-MainThread"
+  }, {
+    "name" : "framework",
+    "value" : "pytest"
+  }, {
+    "name" : "language",
+    "value" : "cpython3"
+  }, {
+    "name" : "package",
+    "value" : "scripts.test01_mp_login"
+  }, {
+    "name" : "resultFormat",
+    "value" : "allure2"
+  } ],
+  "parameters" : [ {
+    "name" : "code",
+    "value" : "'246811'"
+  }, {
+    "name" : "expect",
+    "value" : "'138123456789'"
+  }, {
+    "name" : "username",
+    "value" : "'13812345678'"
+  } ],
+  "links" : [ ],
+  "hidden" : false,
+  "retry" : false,
+  "extra" : {
+    "severity" : "normal",
+    "retries" : [ ],
+    "categories" : [ {
+      "name" : "Product defects",
+      "matchedStatuses" : [ ],
+      "flaky" : false
+    } ],
+    "tags" : [ ]
+  },
+  "source" : "a7200b8ccc9db0a1.json",
+  "parameterValues" : [ "'246811'", "'138123456789'", "'13812345678'" ]
+}

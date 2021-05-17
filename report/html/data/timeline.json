@@ -1,0 +1,26 @@
+{
+  "uid" : "ab17fc5a4eb3bca4b216b548c7f9fcbc",
+  "name" : "timeline",
+  "children" : [ {
+    "name" : "DESKTOP-PKS12GK",
+    "children" : [ {
+      "name" : "18076-MainThread",
+      "children" : [ {
+        "name" : "test_mp_login[13812345678-246811-138123456789]",
+        "uid" : "a7200b8ccc9db0a1",
+        "parentUid" : "17c6b45513a239f32efc7b5b76ba41c5",
+        "status" : "failed",
+        "time" : {
+          "start" : 1621263730209,
+          "stop" : 1621263734203,
+          "duration" : 3994
+        },
+        "flaky" : false,
+        "newFailed" : false,
+        "parameters" : [ "'246811'", "'138123456789'", "'13812345678'" ]
+      } ],
+      "uid" : "17c6b45513a239f32efc7b5b76ba41c5"
+    } ],
+    "uid" : "27a4bd40f16c5a377647d5396b6bd66e"
+  } ]
+}
