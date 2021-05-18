@@ -45,6 +45,6 @@ class TestMpLogin:
             self.mp.base_get_img()
             # 抛出异常
             raise
-            # 3.调用关闭
+        # 3.调用关闭
         self.teardown_class()
         pass

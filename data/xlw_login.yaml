@@ -1,0 +1,4 @@
+xlw_login01:
+  username: "admin"
+  password: "admin"
+  expect: "admin"

@@ -2,6 +2,7 @@ from time import sleep
 
 import allure
 from selenium.webdriver.support.wait import WebDriverWait
+from selenium.webdriver.support import expected_conditions as ec
 
 
 class Base:
@@ -11,7 +12,7 @@ class Base:
         self.driver = driver
 
     # 查找 方法封装
-    def base_find(self, loc, timeout=30, poll=0.5):
+    def base_find(self, *loc, timeout=10, poll=0.5):
         """
         :param loc:格式为列表或元组，内容：定义查找方式，参数
         :param timeout:超时时间，默认30秒
@@ -27,10 +28,14 @@ class Base:
                     x其实就是driver
                 timeout:超时时间（sec）
                 poll_frequency:运行频率（sec）
-                until：until(匿名函数)
+                until：等待返回一个true或者false
         """
-        return WebDriverWait(self.driver, timeout=timeout, poll_frequency=poll) \
-            .until(lambda x: x.find_element(*loc))
+        # return WebDriverWait(self.driver, timeout=timeout, poll_frequency=poll) \
+        #     .until(lambda x: x.find_element(*loc))
+        return WebDriverWait(self.driver, timeout=timeout, poll_frequency=poll).until(
+
+            ec.presence_of_element_located(*loc)
+        )
 
     # 输入 方法封装
     def base_input(self, loc, value):
@@ -63,13 +68,13 @@ class Base:
     # 截图
     def base_get_img(self):
         # 1. 调用截图方法
-        self.driver.get_screenshot_as_file("./image/err.png")
+        self.driver.get_screenshot_as_file("../image/err.png")
         # 2. 调用截图写入报告方法
         self.__base_write_img()
 
     # 将图片写入报告方法（私有）
     def __base_write_img(self):
         # 1.获取图片文件流
-        with open("./image/err.png", "rb") as f:
+        with open("../image/err.png", "rb") as f:
             # 2.调用allure.attach附加方法("附件主体","备注","附件类型")
             allure.attach(f.read(), "错误原因:", allure.attachment_type.PNG)

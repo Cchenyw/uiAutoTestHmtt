@@ -9,12 +9,13 @@ class GetDriver:
     """
         关于类方法@classmethod: 不需要进行实例化
     """
+
     @classmethod
     def get_web_driver(cls, url):
         # 判断是为空
         if cls.__web_driver is None:
             # 获取浏览器
-            cls.__web_driver = webdriver.Chrome('E:/PycharmProjects/uiAutoTestHmtt/tools/chromedriver.exe')
+            cls.__web_driver = webdriver.Chrome('E:\PycharmProjects\AutoScript\chromedriver.exe')
             # 浏览器最大化
             # cls.__web_driver.maximize_window()
             # 打开URL
